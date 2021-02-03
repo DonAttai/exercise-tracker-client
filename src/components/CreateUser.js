@@ -6,7 +6,10 @@ const CreateUser = () => {
 
   const addUser = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/users", user);
+      const res = await axios.post(
+        "https://attai-exercise-tracker.herokuapp.com/users",
+        user
+      );
       const data = res.data.data;
       console.log(data);
     } catch (error) {
