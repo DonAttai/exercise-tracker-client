@@ -100,7 +100,7 @@ const EditExercise = () => {
   return (
     <>
       <div className="row mt-3">
-        <div className="col col-md-8 mx-auto">
+        <div className="col col-md-8 col-sm-12 mx-auto">
           <div className="card card-body">
             <h3>Edit Exercise</h3>
             <form onSubmit={onSubmit} autoComplete="off">
