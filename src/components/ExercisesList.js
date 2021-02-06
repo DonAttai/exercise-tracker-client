@@ -52,18 +52,20 @@ const ExercisesList = () => {
       <div className="row mt-5">
         <div className="col col-md-8 col-sm-12 mx-auto">
           <h3>Exercises</h3>
-          <table className="table">
-            <thead className="thead-dark">
-              <tr>
-                <th scope="col">Username</th>
-                <th scope="col">Description</th>
-                <th scope="col">Duration</th>
-                <th scope="col">Date</th>
-                <th scope="col">Actions</th>
-              </tr>
-            </thead>
-            <tbody>{exerciseList()}</tbody>
-          </table>
+          <div className="table-responsive">
+            <table className="table table-hover">
+              <thead className="thead-dark">
+                <tr>
+                  <th scope="col">Username</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Duration</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody>{exerciseList()}</tbody>
+            </table>
+          </div>
         </div>
       </div>
     </>
